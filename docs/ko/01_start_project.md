@@ -25,4 +25,4 @@ manage.py runserver --settings=conf.settings.local
 
 위 예시의 `local`이 아닌 `production`, `staging` 등으로 변경하여 구체적인 설정 파일을 지정할 수 있다.
 
-만약 아무런 옵션도 지정하지 않는다면 `production` 설정으로 간주한다. [manage.py](/manage.py#L6)
+만약 아무런 옵션도 지정하지 않는다면 [manage.py](/manage.py#L6) 파일 및 [conf/wsgi.py](/conf/wsgi.py#L14) 파일에서 `conf.settings.production` 값으로 간주한다.  
