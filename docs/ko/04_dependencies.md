@@ -1,13 +1,11 @@
-# 의존성
+# 의존성 설치 패키지
 * Django
 * pytz
-
-# 설치 패키지
-* django-model-utils
 * django-crispy-forms
 * django-allauth
 
 # 추천 패키지
+* django-model-utils
 * django-ipware
 * django-mptt
 * wagtail
