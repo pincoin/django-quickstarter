@@ -32,3 +32,14 @@
 * `MEDIA_ROOT`: 실제 미디어 파일이 업로드 되는 경로 (개발/운영)
 
 ## 로깅
+
+
+# URL 패턴 설정
+## 정적 파일/미디어 파일 서빙을 위한 패턴 추가
+개발 환경에서 정적 파일 및 미디어 파일 서빙을 위해서는 [conf/urls.py](/conf/urls.py) 파일에 아래와 같이 URL 패턴을 추가해야 한다.
+
+```python
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
