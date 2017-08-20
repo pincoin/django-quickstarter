@@ -1,13 +1,12 @@
-"""
-For more information on this file, see
-https://docs.djangoproject.com/en/1.11/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.11/ref/settings/
-
-"""
-
 import os
+
+try:
+    from .secret import Secret
+except ImportError:
+    raise ImportError(
+        "Couldn't import Secret values. "
+        "Are you sure conf/settings/secret.py exists and available on conf.settings package?"
+    )
 
 # Build paths (PROJECT_DIR = conf and BASE_DIR = repo)
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -16,9 +15,10 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # SECURITY WARNING: keep them secret!
 # Quick-start development settings - unsuitable for production
 # https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-SECRET_KEY = 'iuf5zt%8ofo=d#3pf*n_0*e9^j^sp=v(9=)ev5=oup2=-r)-6f'
-DEBUG = True
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', ]
+SECRET_KEY = Secret.SECRET_KEY
+DEBUG = Secret.DEBUG
+ALLOWED_HOSTS = Secret.ALLOWED_HOSTS
+DATABASES = Secret.DATABASES
 
 # Application definition
 INSTALLED_APPS = [
@@ -62,15 +62,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'conf.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
