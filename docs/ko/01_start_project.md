@@ -14,8 +14,8 @@ cp docs/ko/05_secret.md conf/settings/secret.py
 # 프로젝트 실행
 서버 실행을 하려면 설정 모듈을 정확히 지정해야 한다.
 
-* 명령행 옵션으로 지정: --settings=conf.settings.local
-* 환경변수로 지정: DJANGO_SETTINGS_MODULE=conf.settings.local
+* 명령행 옵션으로 지정: `--settings=conf.settings.local`
+* 환경변수로 지정: `DJANGO_SETTINGS_MODULE=conf.settings.local`
 
 아래와 같이 명령행 옵션으로 테스트 서버를 구동할 수 있다.
 
@@ -23,6 +23,6 @@ cp docs/ko/05_secret.md conf/settings/secret.py
 manage.py runserver --settings=conf.settings.local
 ```
 
-위 예시의 `local`이 아닌 `production`, `staging` 등으로 구체적인 설정 파일을 지정할 수 있다.
+위 예시의 `local`이 아닌 `production`, `staging` 등으로 변경하여 구체적인 설정 파일을 지정할 수 있다.
 
-만약 아무런 옵션도 지정하지 않는다면 `production` 설정으로 간주한다. [manage.py 소스코드](manage.py#L6)
+만약 아무런 옵션도 지정하지 않는다면 `production` 설정으로 간주한다. [manage.py](/manage.py#L6)
