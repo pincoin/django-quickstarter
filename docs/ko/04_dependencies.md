@@ -5,8 +5,30 @@
 * django-allauth
 
 # 추천 패키지
+## 자료구조
 * django-model-utils
-* django-ipware
 * django-mptt
+
+## CMS
 * wagtail
+
+## 기타 유틸리티
+* django-ipware
 * Pillow
+
+# `INSTALLED_APPS`
+
+## 기본 목록
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
+## 추가 목록
