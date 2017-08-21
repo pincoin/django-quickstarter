@@ -11,6 +11,21 @@ django-admin.py startproject --template https://github.com/pincoin/django-quicks
 cp docs/ko/05_secret.md conf/settings/secret.py
 ```
 
+# 의존성 패키지 설치
+
+```
+pip install -r requirements/local.txt
+```
+
+운영환경에서 별도의 의존성 패키지 요구사항을 작성하고 싶다면
+`requirements/local.txt` 파일을 `requirements/production.txt` 파일로 복사하여 알맞게 설치한다.
+
+# 데이터베이스 마이그레이션
+
+```
+python manage.py migrate
+```
+
 # 프로젝트 실행
 서버 실행을 하려면 설정 모듈을 정확히 지정해야 한다.
 

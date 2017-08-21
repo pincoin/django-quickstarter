@@ -23,6 +23,9 @@ django-allauth의 장점은 거의 대부분의 소셜 로그인을 지원하고
 SNS 공급자(provider)가 제공하는 부정확한 정보(예: 인증 받지 않은 이메일 주소 등)를 로그인 연동 과정에서 정확한 입력 요구할 수 있다.
 특히, Django 시스템 기존 사용자의 경우에도 /accounts/social/connections/ 경로에서 소셜 로그인 계정 연동할 수 있고 remember me 기능도 지원한다.
 
+[Signing Up and Sigining In](https://speakerdeck.com/tedtieken/signing-up-and-signing-in-users-in-django-with-django-allauth) 슬라이드에서
+사용자 등록, 인증, 소셜 인증에 대한 여러 가지 패키지를 비교 설명하고 있다. 
+
 ## 사이트 프레임워크
 Django 공식 패키지에서 `django.contrib.sites` 프레임워크를 제공한다. 이를 이용하여 사이트 기본 정보를 설정하고 복수 사이트를 구현할 수 있다.
 

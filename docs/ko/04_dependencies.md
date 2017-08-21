@@ -9,7 +9,7 @@
 * django-model-utils
 * django-mptt
 
-## CMS
+## CMS 및 커뮤니티
 * wagtail
 
 ## 기타 유틸리티
@@ -32,3 +32,9 @@ INSTALLED_APPS = [
 ```
 
 ## 추가 목록
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.sites',
+]
+```
