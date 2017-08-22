@@ -1,9 +1,18 @@
 # 의존성 설치 패키지
 * Django
-* pytz
-* django-crispy-forms
+    * pytz
+* django-crispy-forms    
 * django-allauth
-
+    * certifi
+    * chardet
+    * defusedxml
+    * idna
+    * oauthlib
+    * python3-openid
+    * requests
+    * requests-oauthlib
+    * urllib3
+    
 # 추천 패키지
 ## 자료구조
 * django-model-utils
