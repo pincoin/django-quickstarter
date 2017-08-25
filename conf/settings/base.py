@@ -20,7 +20,6 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 SECRET_KEY = Secret.SECRET_KEY
 DEBUG = Secret.DEBUG
 ALLOWED_HOSTS = Secret.ALLOWED_HOSTS
-DATABASES = Secret.DATABASES
 
 # Application definition
 INSTALLED_APPS = [

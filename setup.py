@@ -41,4 +41,5 @@ setup(name='django-quickstarter',
       scripts=[
           'manage.py',
       ],
+      zip_safe=False,
       )

@@ -1,7 +1,8 @@
 from .base import *
 
 DATABASES = {
-    'default': Secret.DATABASE_DEFAULT
+    'default': Secret.DATABASE_DEFAULT,
+    'test': Secret.DATABASE_TEST
 }
 
 # Static files (CSS, JavaScript, Images)
