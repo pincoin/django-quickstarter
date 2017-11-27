@@ -8,7 +8,7 @@ django-admin.py startproject --template https://github.com/pincoin/django-quicks
 # `conf/settings/secret.py` 파일 생성
 
 ```
-cp docs/ko/05_secret.md conf/settings/secret.py
+cp docs/ko/06_secret.md conf/settings/secret.py
 ```
 
 # 의존성 패키지 설치

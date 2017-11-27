@@ -1,9 +1,6 @@
 from .base import *
 
-DATABASES = {
-    'default': Secret.DATABASE_DEFAULT,
-    'test': Secret.DATABASE_TEST
-}
+DATABASES = Secret.DATABASES
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
