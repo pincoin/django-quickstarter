@@ -1,4 +1,6 @@
 # 의존성 설치 패키지
+requirements 파일에는 하위 종속 파일을 기술하지 않는다
+
 * Django
     * pytz
 * django-crispy-forms    
@@ -29,6 +31,8 @@
 
 ## 기본 목록
 
+기본 설치 앱 목록은 다음과 같다.
+
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +45,8 @@ INSTALLED_APPS = [
 ```
 
 ## 추가 목록
+
+아래와 같이 필요한 앱을 추가할 수 있다.
 
 ```python
 INSTALLED_APPS = [
