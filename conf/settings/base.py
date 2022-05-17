@@ -15,7 +15,7 @@ secret = json.loads(open(os.path.join(BASE_DIR, 'settings', 'secret.json')).read
 SECRET_KEY = secret['SECRET_KEY']
 DEBUG = secret['DEBUG']
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', ]
-DATABASES = secret['DATABASE']
+DATABASES = secret['DATABASES']
 
 # Application definition
 
