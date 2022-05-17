@@ -1,7 +1,7 @@
 # 주요 설정
 * `conf/settings/base.py`
-* `conf/settings/local.py`, `conf/settings/production.py`
-* `conf/settings/secret.py`
+* `conf/settings/local.py`, `conf/settings/staging.py` `conf/settings/production.py`
+* `conf/settings/secret.json`
 
 자세한 정보는 [설정 공식 문서](https://docs.djangoproject.com/en/1.11/topics/settings/)와 [전체 설정 옵션 문서](https://docs.djangoproject.com/en/1.11/ref/settings/)를 확인한다.
 
@@ -32,8 +32,6 @@
 * `MEDIA_ROOT`: 실제 미디어 파일이 업로드 되는 경로 (개발/운영)
 
 ## 로깅
-
-
 # URL 패턴 설정
 ## 정적 파일/미디어 파일 서빙을 위한 패턴 추가
 개발 환경에서 정적 파일 및 미디어 파일 서빙을 위해서는 [conf/urls.py](/conf/urls.py) 파일에 아래와 같이 URL 패턴을 추가해야 한다.
