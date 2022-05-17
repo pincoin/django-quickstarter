@@ -142,8 +142,12 @@ HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=Y brew install msodbcsql17 mssql-tools
     }
   }
 }
-
 ```
+
+ODBC 드라이버
+* `{ODBC Driver 17 for SQL Server}` - SQL Server 2008 ~ 2019
+* `{ODBC Driver 18 for SQL Server}` - SQL Server 2012 ~ 2019 (22년 5월 현재 M1 맥북에서 동작 안 함)
+
 #### mssql-django ~22년 4월 현재
 * Django 3.2 / 4.0
 * SQL Server 2016, 2017, 2019
@@ -157,16 +161,14 @@ HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=Y brew install msodbcsql17 mssql-tools
 * SQL Server 2008/2008R2, 2012, 2014, 2016, 2017
 
 ### Oracle
-M1에서는 Rosetta2 실행
-
 테스트 버전: 12.x, 19.x
 
 ```
 pip install cx-Oracle
 ```
 
-
 https://www.oracle.com/kr/database/technologies/instant-client/macos-intel-x86-downloads.html
 접속 후 Basic Package (DMG) 파일 다운로드 한다. 그리고 디렉토리 안에 `./install_ic.sh` 스크립트 실행하여 설치
+M1에서는 Rosetta2 실행 필요
 
-SID: DB 이름(aws 기본값: ORCL)
+SID: DB 이름(aws 기본값: `ORCL`)
