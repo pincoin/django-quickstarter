@@ -139,7 +139,10 @@ uploads/*
 
 # Secret Configuration
 conf/settings/secret.py
+conf/settings/secret.json
+
 settings/production.py
 settings/staging.py
+
 requirements/production.txt
 requirements/staging.txt
