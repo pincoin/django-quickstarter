@@ -146,3 +146,6 @@ requirements/production.txt
 requirements/staging.txt
 
 assets/
+
+*.DS_Store
+
